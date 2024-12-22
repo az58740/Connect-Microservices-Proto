@@ -80,7 +80,7 @@ message CreateUserResponse {
 message UpdateUserRequest {
     string user_id = 1;          // ID of the user to update
     UserProfile profile = 2;     // Updated profile information
-    UserStatus user_status = 3;   // Updated status of the user
+    UserStatus user_status = 3;  // Updated status of the user
 }
 
 // Message for updating user response
@@ -91,6 +91,8 @@ message UpdateUserResponse {
 // Message for retrieving user details by user ID
 message GetUserRequest {
     string user_id = 1;          // ID of the user to retrieve
+    string username = 2;         // Username for user can be email
+    string password = 3;         //user's password
 }
 
 // Message for user detail response

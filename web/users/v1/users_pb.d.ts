@@ -404,6 +404,20 @@ export declare type GetUserRequest = Message<"users.v1.GetUserRequest"> & {
    * @generated from field: string user_id = 1;
    */
   userId: string;
+
+  /**
+   * Username for user can be email
+   *
+   * @generated from field: string username = 2;
+   */
+  username: string;
+
+  /**
+   * user's password
+   *
+   * @generated from field: string password = 3;
+   */
+  password: string;
 };
 
 /**
